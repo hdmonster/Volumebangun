@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/seven"
+    tools:context="genius.volumeme.MainActivity">
+
+    <Button
+        android:id="@+id/btnBola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bola"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:layout_alignBaseline="@+id/btnLimas"
+        android:layout_alignBottom="@+id/btnLimas"
+        android:layout_alignLeft="@+id/btnSilinder"
+        android:layout_alignStart="@+id/btnSilinder" />
+
+    <Button
+        android:id="@+id/btnLimas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="Kerucut"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_below="@+id/btnCube"
+        android:layout_alignLeft="@+id/textMain"
+        android:layout_alignStart="@+id/textMain" />
+
+    <Button
+        android:id="@+id/btnSilinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:text="Silinder"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_below="@+id/textMain"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="146dp" />
+
+    <Button
+        android:id="@+id/btnCube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cube"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:layout_alignBaseline="@+id/btnSilinder"
+        android:layout_alignBottom="@+id/btnSilinder"
+        android:layout_alignLeft="@+id/btnLimas"
+        android:layout_alignStart="@+id/btnLimas" />
+
+    <TextView
+        android:id="@+id/textMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="HITUNG VOLUME"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Created by: Haydar Dzaky S." />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beta Version 2.0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/btnBola"
+        android:layout_toRightOf="@+id/btnBola" />
+
+</RelativeLayout>
